@@ -1,0 +1,9 @@
+[user]
+	name = Jakub Zelenka
+	email = jakub.zelenka@gmail.com
+[core]
+	editor = vim
+[color]
+	ui = true
+[push]
+	default = simple
