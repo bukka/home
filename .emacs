@@ -83,6 +83,17 @@
 (setq sh-basic-offset 2)
 
 ;;;; ------------------------------------------------------------------------------
+;;;; M4 and Autoconf mode
+(add-hook 'm4-mode-hook
+           (lambda ()
+			 (setq tab-width 2)
+			 (setq indent-tabs-mode nil)))
+(add-hook 'autoconf-mode-hook
+           (lambda ()
+			 (setq tab-width 2)
+			 (setq indent-tabs-mode nil)))
+
+;;;; ------------------------------------------------------------------------------
 ;;;; SQL mode
 (setq sql-product 'mysql)
 
