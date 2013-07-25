@@ -1,6 +1,7 @@
 ;;;; General setting setting
 ;;; formating - indent, offset...
 (setq c-default-style "k&r")
+(desktop-save-mode 1)
 (c-set-offset 'substatement-open 0)
 (c-set-offset 'inline-open 0)
 (setq c-basic-offset 4)
