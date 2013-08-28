@@ -96,6 +96,13 @@
 			 (setq indent-tabs-mode nil)))
 
 ;;;; ------------------------------------------------------------------------------
+;;;; Markdown mode
+(autoload 'markdown-mode "markdown-mode"
+   "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+;;;; ------------------------------------------------------------------------------
 ;;;; SQL mode
 (setq sql-product 'mysql)
 
