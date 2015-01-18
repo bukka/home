@@ -35,7 +35,7 @@
 (add-to-list 'auto-mode-alist '("\\.inc$" . html-mode))
 (add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
 (add-to-list 'auto-mode-alist '("\\.phpt$" . php-mode))
-(setq php-completion-file "/home/jakub/.emacs.d/php/php-completion-file")
+(setq php-completion-file "~/.emacs.d/php/php-completion-file")
 
 (add-hook 'php-mode-hook
           (lambda ()
@@ -60,6 +60,11 @@
 ;(add-to-list 'load-path "~/.emacs.d/load/")
 ;(autoload 'js2-mode "js2" nil t)
 ;(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
+;;;; ------------------------------------------------------------------------------
+;;;; Puppet mode
+(autoload 'puppet-mode "puppet-mode" "Major mode for editing puppet manifests")
+(add-to-list 'auto-mode-alist '("\\.pp$" . puppet-mode))
 
 
 ;;;; ------------------------------------------------------------------------------
