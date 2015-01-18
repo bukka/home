@@ -1,9 +1,13 @@
 [user]
 	name = Jakub Zelenka
-	email = jakub.zelenka@gmail.com
+	email = bukka@php.net
 [core]
 	editor = vim
 [color]
 	ui = true
 [push]
 	default = simple
+[alias]
+	st = status
+	ci = commit
+	cia = commit -am
