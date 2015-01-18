@@ -69,6 +69,15 @@
              (define-key html-mode-map "\C-cj" 'js-mode)
              (define-key html-mode-map "\C-cp" 'php-mode)))
           
+
+;;;; ------------------------------------------------------------------------------
+;;;; nXML mode
+(add-to-list 'auto-mode-alist
+			 (cons (concat "\\." (regexp-opt '("xml" "xsd" "sch" "rng" "xslt" "svg" "rss") t) "\\'")
+				   'nxml-mode))
+
+
+
 ;;;; ------------------------------------------------------------------------------
 ;;;; nXhtml mode
 ; (load "/home/jakub/.emacs.d/nxhtml/autostart.el")
@@ -151,6 +160,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(nxml-child-indent 1)
  '(safe-local-variable-values (quote ((sgml-local-ecat-files) (sgml-local-catalogs) (sgml-exposed-tags) (sgml-default-dtd-file . "~/.phpdoc/manual.ced") (sgml-parent-document) (sgml-indent-data . t) (sgml-indent-step . 1) (sgml-always-quote-attributes . t) (sgml-minimize-attributes) (sgml-shorttag . t) (sgml-omittag . t))))
  '(sgml-basic-offset 1)
  '(sql-indent-offset 1))
