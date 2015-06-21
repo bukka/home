@@ -24,7 +24,7 @@
 (global-set-key (kbd "RET") 'newline-and-indent)
 
 ;;;; load path
-(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/lisp/")
 
 ;;;; re2c
 (add-to-list 'auto-mode-alist '("\\.re$" . c-mode))
@@ -121,7 +121,7 @@
 (setq sql-product 'mysql)
 
 (eval-after-load "sql"
-  (load-library "~/.emacs.d/sql-indent.el"))
+  (load-library "~/.emacs.d/lisp/sql-indent.el"))
 
 
 ;;;; ------------------------------------------------------------------------------
